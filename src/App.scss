@@ -1,0 +1,47 @@
+.App {
+  text-align: center;
+  .loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+  }
+}
+
+.continer{
+  display: flex;
+    width: 50%;
+    border: 1px solid yellow;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+    padding:8px;
+    &.pokemon{
+      width: 40%;
+      height: 100px;
+    }
+    .leftSide{
+      width: 50%;
+    }
+    .rightSide{
+      width: 50%;
+      .filmCount{
+        display: flex;
+        justify-content: center;
+    align-items: center;
+      }
+    }
+}
+@media only screen and (max-width:600px)  {
+  .parentClass{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (min-width:600px)  {
+  .parentClass{
+    display: flex;
+    flex-direction: column;
+  }
+}
